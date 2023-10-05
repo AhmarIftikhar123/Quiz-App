@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@300&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Epilogue&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@200&family=Inter:wght@200&family=Josefin+Sans:wght@200;300&family=Kumbh+Sans:wght@300;400&family=League+Spartan&family=Lexend+Deca:wght@300;400&family=Libre+Franklin:wght@200&family=Open+Sans&family=Outfit:wght@200&family=Overpass:wght@600&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@200;300&family=Red+Hat+Display&family=Roboto:wght@300&family=Rubik:wght@300&family=Space+Mono:wght@700&family=Ubuntu:wght@700&display=swap");
+
+body {
+  background: linear-gradient(
+    to right,
+    #00bcd4,
+    #ff5722
+  ); /* Cyan to Deep Orange */
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: white;
+  width: 90%;
+  max-width: 450px;
+  margin: 100px auto 0;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+main h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #333333;
+}
+
+.quiz_box h2 {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.btn_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.btn_box button {
+  width: 100%;
+  padding-block: 0.7rem;
+  color: #666666;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-align: left;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#next_Btn {
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+  background-color: #528a9e;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  display: block;
+  margin: 1rem auto 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn_box button:hover:not([disabled]),
+#next_Btn:hover {
+  background: linear-gradient(to right, #00bcd4, #ff5722);
+  color: white;
+  opacity: 0.8;
+}
+
+button:disabled {
+  cursor: no-drop;
+}
+
+button.correct {
+  background: linear-gradient(to right, #4caf50, #ffffff);
+  color: white;
+}
+button.incorrect {
+  background: linear-gradient(to right, #ff0000, #ffffff);
+  color: white;
+}
